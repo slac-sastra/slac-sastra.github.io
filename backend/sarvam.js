@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-const SARVAM_API_KEY = "YOUR_SARVAM_API_KEY";
+const SARVAM_API_KEY = "sk_p1orff76_vbOLGtgYS2cbUdG8qYbzKVAP";
 
 async function generateAIResponse(data) {
   const prompt = `
