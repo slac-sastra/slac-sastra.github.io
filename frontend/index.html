@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Legal Aid AI</title>
+</head>
+<body>
+
+<h2>Legal Aid Assistant</h2>
+
+<p>
+👉 Choose Mode: Voice or Text  
+</p>
+
+<select id="mode" onchange="toggleMode()">
+  <option value="text">Text Mode</option>
+  <option value="voice">Voice Mode</option>
+</select>
+
+<hr/>
+
+<form id="form">
+
+<input id="name" placeholder="Name">
+<button type="button" class="mic" onclick="startVoice('name')">🎤</button><br>
+
+<input id="age" placeholder="Age"><br>
+
+<input id="gender" placeholder="Gender">
+<button class="mic" onclick="startVoice('gender')" type="button">🎤</button><br>
+
+<input id="address" placeholder="Address">
+<button class="mic" onclick="startVoice('address')" type="button">🎤</button><br>
+
+<input id="village" placeholder="Village">
+<button class="mic" onclick="startVoice('village')" type="button">🎤</button><br>
+
+<input id="taluk" placeholder="Taluk">
+<button class="mic" onclick="startVoice('taluk')" type="button">🎤</button><br>
+
+<input id="district" placeholder="District">
+<button class="mic" onclick="startVoice('district')" type="button">🎤</button><br>
+
+<input id="phone" placeholder="Phone"><br>
+
+<textarea id="issue" placeholder="Describe Issue"></textarea>
+<button type="button" class="mic" onclick="startVoice('issue')">🎤 Speak</button><br>
+
+<button type="submit">Submit</button>
+
+</form>
+
+<h3>AI Response</h3>
+<pre id="response"></pre>
+
+<button id="readBtn" onclick="speakResponse()">🔊 Read</button>
+
+<script src="app.js"></script>
+
+</body>
+</html>
